@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Weather in Zaporizhzhia</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"/>
+</head>
+<body style="background-color:beige;">
+<main class="container">
+    <h1 style="text-align: center">Weather in Zaporizhzhia</h1>
+    <div style="margin-bottom: 20px; border-bottom: 2px solid; padding-left: 30px">
+        <h2>Weather from <a
+                href="https://weather.com/uk-UA/weather/today/l/ad98cd3144fd119b42c9e6e71e71ae4a2ce6aae7b08cdc369344b7af43ceafbf" target="_blank" >weather.com</a>
+        </h2>
+        <ul>
+            <li><span>Temperature: {{task1[0]}}</span></li>
+            <li><span>Wind speed: {{task1[1]}}</span></li>
+            <li><span>Humidity: {{task1[2]}}</span></li>
+            <li><span>Pressure: {{task1[3]}}</span></li>
+            <li><span>Description: {{task1[4]}}</span></li>
+        </ul>
+    </div>
+    <div style="margin-bottom: 20px; border-bottom: 2px solid; padding-left: 30px">
+        <h2>Weather from <a
+                href="https://www.gismeteo.ua/ua/weather-zaporizhia-5093/now/" target="_blank">gismeteo.ua</a>
+        </h2>
+        <ul>
+            <li><span>Temperature: {{task2[0]}}</span></li>
+            <li><span>Wind speed: {{task2[1]}}</span></li>
+            <li><span>Humidity: {{task2[2]}}</span></li>
+            <li><span>Pressure: {{task2[3]}}</span></li>
+            <li><span>Description: {{task2[4]}}</span></li>
+        </ul>
+    </div>
+    <div style="margin-bottom: 20px; border-bottom: 2px solid; padding-left: 30px">
+        <h2>Weather from <a
+                href="https://www.msn.com/en-gb/weather/forecast/in-Zaporizhzhya,Ukraine" target="_blank">msn.com</a>
+        </h2>
+        <ul>
+            <li><span>Temperature: {{task3[0]}}</span></li>
+            <li><span>Wind speed: {{task3[1]}}</span></li>
+            <li><span>Humidity: {{task3[2]}}</span></li>
+            <li><span>Pressure: {{task3[3]}}</span></li>
+            <li><span>Description: {{task3[4]}}</span></li>
+        </ul>
+    </div>
+</main>
+</body>
+</html>
