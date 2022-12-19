@@ -15,8 +15,8 @@ def get_wind_speed_normalize(wind):
 
 def get_pressure_normalize(pressure):
     pressure = re.search(r'\d+', pressure).group()
-    if float(pressure) > 1000:
-        pressure = float(pressure) * 0.75006375541921
+    if int(pressure) > 1000:
+        pressure = int(pressure) * 0.75006375541921
     pressure = f'{int(pressure)} mmHg'
     return pressure
 
