@@ -1,5 +1,4 @@
 import asyncio
-import re
 
 import aiohttp
 import aiohttp_jinja2
